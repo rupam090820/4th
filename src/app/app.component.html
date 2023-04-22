@@ -1,0 +1,21 @@
+<h1>our personal details.....</h1>
+<h4>using string interpolation(one way data binding).....</h4>
+<p>my name is {{name}}</p>
+<p>my age is:-{{age}}</p>
+<p>my roll no is:-{{age}}</p>
+<p>addition of 2 number is:-{{2+3}}  and boolean valu is {{bool}}</p>
+<h1>event binding</h1>
+<p [innerHTML]="name"></p>
+<button [disabled]="bool">click here....</button>
+<p [innerHTML]="7+5"></p>
+<input type="text" name="" value="textss" #n><br>
+<button class="btn btn-primary" (click)="myClick(n.value)">event bindding </button><br>
+
+<input type="text" name=""  [(ngModel)]="name">
+<p>name is:-{{name}}</p>
+<h1>///////////////////////////////////////////////////////////////////</h1>
+<H2>MODEL.............</H2>
+<input type="text" name="" [(ngModel)]="userinfo.id">
+<p>id is :- {{userinfo}}</p>
+<input type="text" name="" [(ngModel)]="userinfo.mob">
+<p>mobile no is :- {{userinfo.mob}}</p>
